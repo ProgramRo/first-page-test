@@ -7,33 +7,65 @@
     <title>First Page Test</title>
     <!--CDN Bootstrap v5.2.0-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!--CSS File-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
+    <header>
+        <!--Navbar START-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar END-->
+    </header>
+
+    <!--Section 1-->
+    <article class="seccion-trabajos">
+        <div class="text-center">
+            <h2>Trabajos</h2>
+        </div>
+        <div class="container elementos">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <!--Coca-Cola Card-->
+                    <div class="tarjeta">
+                        <div class="circle" style="--clr:#f40103">
+                            <img src="./assets/img/cocacola_logo.png" class="logo" alt="" srcset="">
+                        </div>
+                        <div class="content">
+                            <h2>CocaCola</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus autem delectus consequuntur
+                                numquam.</p>
+                            <a href="#">Explore</a>
+                        </div>
+                        <img src="./assets/img/cocacola.png" class="product_img" alt="" srcset="">
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </article>
 
     <!--CDN Bootstrap Bundle Min v5.2.0-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
